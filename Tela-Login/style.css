@@ -27,3 +27,39 @@ body {
     box-shadow: 0 10px 25px rgba(203, 163, 123, 0.15);
     text-align: center;
 }
+
+.brand h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    color: #a67c52;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.brand p {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+.form-hidden {
+    display: none;
+}
+
+.form-active {
+    display: flex;
+}
+
+.input-group label {
+    display: block;
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 6px;
+}
