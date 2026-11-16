@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Yas Perfumes e beleza | Perfumaria</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topo">
+    <div class="container topo__linha">
+      <a href="#inicio" class="logo">Yas | Perfumes & Beleza</a>
+      <nav>
+        <a href="#inicio">Início</a>
+        <a href="#perfumes">Perfumes</a>
+        <a href="#contato">Contato</a>
+        <span class="carrinho">Carrinho (<span id="contador">0</span>)</span>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero" id="inicio">
+      <div class="container hero__grade">
+        <div class="hero__texto">
+          <p>
+            Uma seleção pequena de fragrâncias, escolhidas com calma.
+            Notas suaves, boa fixação e frascos que ficam bem em qualquer penteadeira.
+          </p>
+          <a href="#perfumes" class="botao">Ver os perfumes</a>
+        </div>
+        <div class="hero__imagem">
+          <img src="img/frasco-1.svg" alt="Frasco de perfume preto">
+        </div>
+      </div>
+    </section>
+
+    <section class="perfumes" id="perfumes">
+      <div class="container">
+        <h2>Perfumes</h2>
+
+        <div class="lista">
+
+          <article class="produto">
+            <div class="produto__foto">
+              <img src="img/frasco-1.svg" alt="Noir">
+            </div>
+            <h3>Noir</h3>
+            <p class="preco">R$ 389,90</p>
+            <p class="detalhes" hidden>Amadeirado. Notas de cedro, âmbar e baunilha. 100 ml.</p>
+            <div class="produto__botoes">
+              <button class="link" data-acao="detalhes">Ver detalhes</button>
+              <button class="botao botao--pequeno" data-acao="comprar">Comprar</button>
+            </div>
+          </article>
+
+          <article class="produto">
+            <div class="produto__foto">
+              <img src="img/frasco-2.svg" alt="Lírio">
+            </div>
+            <h3>Lírio</h3>
+            <p class="preco">R$ 329,90</p>
+            <p class="detalhes" hidden>Floral. Notas de lírio, jasmim e almíscar. 100 ml.</p>
+            <div class="produto__botoes">
+              <button class="link" data-acao="detalhes">Ver detalhes</button>
+              <button class="botao botao--pequeno" data-acao="comprar">Comprar</button>
+            </div>
+          </article>
+
+          <article class="produto">
+            <div class="produto__foto">
+              <img src="img/frasco-3.svg" alt="Âmbar">
+            </div>
+            <h3>Âmbar</h3>
+            <p class="preco">R$ 449,90</p>
+            <p class="detalhes" hidden>Oriental. Notas de âmbar, açafrão e patchouli. 100 ml.</p>
+            <div class="produto__botoes">
+              <button class="link" data-acao="detalhes">Ver detalhes</button>
+              <button class="botao botao--pequeno" data-acao="comprar">Comprar</button>
+            </div>
+          </article>
+
+          <article class="produto">
+            <div class="produto__foto">
+              <img src="img/frasco-4.svg" alt="Brisa">
+            </div>
+            <h3>Brisa</h3>
+            <p class="preco">R$ 279,90</p>
+            <p class="detalhes" hidden>Fresco. Notas de limão siciliano, hortelã e sal marinho. 100 ml.</p>
+            <div class="produto__botoes">
+              <button class="link" data-acao="detalhes">Ver detalhes</button>
+              <button class="botao botao--pequeno" data-acao="comprar">Comprar</button>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="rodape" id="contato">
+    <div class="container rodape__grade">
+      <div>
+        <p class="logo">Yas | Perfumes & Beleza</p>
+        <p>Foz do Iguaçu, PR</p>
+      </div>
+      
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
