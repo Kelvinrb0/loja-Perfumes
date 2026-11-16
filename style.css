@@ -1,0 +1,226 @@
+/* ---------- Base ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #222;
+  background: #fff;
+  line-height: 1.6;
+}
+
+h1, h2, h3, .logo {
+  font-family: Georgia, serif;
+  font-weight: normal;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ---------- Botões ---------- */
+.botao {
+  display: inline-block;
+  padding: 12px 26px;
+  background: #222;
+  color: #fff;
+  border: 1px solid #222;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.botao:hover {
+  background: #fff;
+  color: #222;
+}
+
+.botao--pequeno {
+  padding: 8px 18px;
+  font-size: 13px;
+}
+
+.link {
+  background: none;
+  border: none;
+  font-size: 13px;
+  text-decoration: underline;
+  cursor: pointer;
+  color: #555;
+}
+
+.link:hover {
+  color: #9a7b3f;
+}
+
+/* ---------- Topo ---------- */
+.topo {
+  border-bottom: 1px solid #e5e0d8;
+}
+
+.topo__linha {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.logo {
+  font-size: 22px;
+}
+
+.topo nav {
+  display: flex;
+  gap: 24px;
+  font-size: 14px;
+}
+
+.topo nav a:hover {
+  color: #9a7b3f;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  background: #f4efe7;
+}
+
+.hero__grade {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.hero h1 {
+  font-size: 44px;
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  color: #555;
+  margin-bottom: 30px;
+  max-width: 420px;
+}
+
+.hero__imagem img {
+  width: 200px;
+  margin: 0 auto;
+}
+
+/* ---------- Perfumes ---------- */
+.perfumes {
+  padding: 80px 0;
+}
+
+.perfumes h2 {
+  font-size: 30px;
+  margin-bottom: 36px;
+}
+
+.lista {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+}
+
+.produto__foto {
+  background: #f4efe7;
+  padding: 30px;
+  margin-bottom: 14px;
+}
+
+.produto__foto img {
+  width: 100px;
+  margin: 0 auto;
+}
+
+.produto h3 {
+  font-size: 20px;
+}
+
+.preco {
+  color: #9a7b3f;
+  margin-bottom: 8px;
+}
+
+.detalhes {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.produto__botoes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+/* ---------- Rodapé ---------- */
+.rodape {
+  background: #222;
+  color: #ddd;
+  font-size: 14px;
+  padding: 40px 0;
+}
+
+.rodape__grade {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.rodape .logo {
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+/* ---------- Celular ---------- */
+@media (max-width: 800px) {
+  .lista {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero__grade {
+    grid-template-columns: 1fr;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .rodape__grade {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .topo__linha {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .lista {
+    grid-template-columns: 1fr;
+  }
+}
